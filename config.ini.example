@@ -3,7 +3,7 @@
 # Absolute path to RazerS3 binary, and number of threads to use for mapping
 
 razers3=/path/to/razers3
-threads=16
+threads=1
 
 [ilp]
 
@@ -25,7 +25,7 @@ threads=1
 # files to OptiType directly as input and spare the expensive read mapping
 # step.
 
-deletebam=true
+deletebam=false
 
 # In paired-end mode one might want to use reads with just one mapped end (e.g.,
 # the other end falls outside the reference region). This setting allows the
@@ -43,3 +43,6 @@ unpaired_weight=0
 # plots as unpaired reads, regardless of this setting.
 
 use_discordant=false
+
+min_covrate=80
+
